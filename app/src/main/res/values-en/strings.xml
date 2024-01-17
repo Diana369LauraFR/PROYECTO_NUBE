@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">rent</string>
+    <string name="ingresar">Get into</string>
+    <string name="correo">Email</string>
+    <string name="contraseña">Password</string>
+
+
+
+
+
+
+
+
+
+    <string name="txtDisponibles">Disponibles:</string>
+    <string name="txtnom">Nombre producto:</string>
+    <string name="txtprecio">Precio: $</string>
+    <string name="txtdisponible2">"Disponibles: "</string>
+    <string name="txtDescripcion">Descripción:</string>
+    <string name="btnAdd">Añadir al carrito</string>
+    <string name="txtcartProduct">Producto</string>
+    <string name="txtcartprice">Precio</string>
+    <string name="txtpricecart">Precio producto:</string>
+    <string name="txtcantidad">Cantidad:</string>
+    <string name="txtFormapago">Forma de pago:</string>
+    <string name="txtdireccioncart">Dirección:</string>
+    <string name="txttelcart">Télefono:</string>
+    <string name="btnEliminar">Eliminar</string>
+    <string name="btnactualizar">Actualizar</string>
+    <string name="txtdetailsproduct">Detalles producto</string>
+    <string name="hint1">Ingresa la cantidad a solicitar</string>
+    <string name="hint2">Ingresa una forma de pago</string>
+    <string name="hint3">"Ingresa tu dirección "</string>
+    <string name="hint4">"Ingresa tu teléfono "</string>
+    <string name="registrarme">Sign up</string>
+</resources>

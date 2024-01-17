@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/inicio"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/nav_inventario"
+            android:icon="@drawable/inventario"
+            android:title="Inventario" />
+        <item
+            android:id="@+id/nav_entrada"
+            android:icon="@drawable/entrada"
+            android:title="Agregar" />
+        <item
+            android:id="@+id/nav_actualizar"
+            android:icon="@drawable/update"
+            android:title="Editar" />
+
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/cerrar"
+            android:title="Cerar Sesion" />
+    </group>
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">rent</string>
+    <string name="ingresar">Entrer dans</string>
+    <string name="correo">Courrier électronique</string>
+    <string name="contraseña">Mot de passe</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="txtDisponibles">a volé:</string>
+<string name="txtnom">Nom du produit:</string>
+<string name="txtprecio">Prix: $</string>
+<string name="txtdisponible2">"A volé: "</string>
+<string name="txtDescripcion">Description:</string>
+<string name="btnAdd">Ajouter une boutique:</string>
+<string name="txtcartProduct">Produit</string>
+<string name="txtcartprice">Prix</string>
+<string name="txtpricecart">Prix produit:</string>
+<string name="txtcantidad">Montant::</string>
+<string name="txtFormapago">Mode de paiement:</string>
+<string name="txtdireccioncart">Adresse:</string>
+<string name="txttelcart">Téléphone:</string>
+<string name="btnEliminar">Éliminer</string>
+<string name="btnactualizar">Mise à jour</string>
+<string name="txtdetailsproduct">Détails du produit</string>
+<string name="hint1">Entrez le montant à demander</string>
+<string name="hint2">Entrez un mode de paiement</string>
+<string name="hint3">Entrez votre adresse</string>
+<string name="hint4">Entrez votre téléphone</string>
+    <string name="registrarme">s\'inscrire</string>
+</resources>

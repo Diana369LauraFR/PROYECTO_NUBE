@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.rent.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/nav_agregarrentador"
+        android:name="com.example.rent.ui.admin.admin_agregar_rentador"
+        android:label="activity_admin_agregar_rentador"
+        tools:layout="@layout/activity_admin_agregar_rentador" />
+
+
+
+    <activity
+        android:id="@+id/nav_inicio"
+        android:name="com.example.rent.ui.general.iniciar_sesion"
+        android:label="activity_admin_agregar_rentador"
+        tools:layout="@layout/activity_inicio_sesion" />
+
+
+
+</navigation>

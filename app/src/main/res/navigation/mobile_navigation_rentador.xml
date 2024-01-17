@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.rent.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/nav_entrada"
+        android:name="com.example.rent.ui.rentador.agregar_pys"
+        android:label="activity_admin_agregar_rentador"
+        tools:layout="@layout/activity_agregar_pys" />
+    <activity
+        android:id="@+id/nav_inventario"
+        android:name="com.example.rent.ui.rentador.MainActivity"
+        android:label="activity_admin_agregar_rentador"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/nav_actualizar"
+        android:name="com.example.rent.ui.rentador.actualizar_pys"
+        android:label="activity_admin_agregar_rentador"
+        tools:layout="@layout/activity_actualizar_producto" />
+
+    <activity
+        android:id="@+id/nav_inicio"
+        android:name="com.example.rent.ui.general.iniciar_sesion"
+        android:label="activity_admin_agregar_rentador"
+        tools:layout="@layout/activity_inicio_sesion" />
+
+</navigation>
