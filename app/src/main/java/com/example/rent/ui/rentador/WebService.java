@@ -15,7 +15,7 @@ public class WebService {
         try
         {
             //Establecer URL a consultar en servidor
-            URL url = new URL("http://192.168.2.10/eventpart/Consultar_pos.php");
+            URL url = new URL("http://192.168.1.197:5555/eventpart/Consultar_pos.php");
             //Establecer conexiÃ³n con el webservice
             HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
             //Habilitar envÃ­o de datos mediante POST

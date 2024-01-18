@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.os.Bundle;
 import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,7 +41,7 @@ import java.util.Map;
 public class agregar_pys extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
-    private static final String UPLOAD_URL = "http://192.168.2.10/eventpart/upload.php";
+    private static final String UPLOAD_URL = "http://192.168.1.197:5555/eventpart/upload.php";
 
     private EditText nombre, precio, stock, descripcion;
 
@@ -146,6 +147,7 @@ public class agregar_pys extends AppCompatActivity {
                         public void onResponse(String response) {
                             loading.dismiss();
                             Toast.makeText(agregar_pys.this, response, Toast.LENGTH_LONG).show();
+                            Log.d("error insertar", response);
                             // Vaciar los campos
                             nombre.setText("");
                             tipo.clearCheck();

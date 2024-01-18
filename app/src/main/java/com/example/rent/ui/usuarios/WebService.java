@@ -16,7 +16,7 @@ public class WebService {
         try
         {
             //Establecer URL a consultar en servidor
-            URL url = new URL("http://192.168.2.10/eventpart/ws_consultar_rv.php");
+            URL url = new URL("http://192.168.1.197:5555/eventpart/ws_consultar_rv.php");
             //Establecer conexiÃ³n con el webservice
             HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
             //Habilitar envÃ­o de datos mediante POST
@@ -75,7 +75,7 @@ public class WebService {
         try
         {
             //Establecer URL a consultar en servidor
-            URL url = new URL("http://192.168.2.10/eventpart/ws_insertar_carrito.php");
+            URL url = new URL("http://192.168.1.197:5555/eventpart/ws_insertar_carrito.php");
             //Establecer conexiÃ³n con el webservice
             HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
             //Habilitar envÃ­o de datos mediante POST
@@ -159,7 +159,7 @@ public class WebService {
         try
         {
             //Establecer URL a consultar en servidor
-            URL url = new URL("http://192.168.2.10/eventpart//ws_consultar_carrito.php");
+            URL url = new URL("http://192.168.1.197:5555/eventpart//ws_consultar_carrito.php");
             //Establecer conexiÃ³n con el webservice
             HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
             //Habilitar envÃ­o de datos mediante POST
@@ -219,7 +219,7 @@ public class WebService {
         try
         {
             //Establecer URL a consultar en servidor
-            URL url = new URL("http://192.168.2.10/eventpart/ws_actualizar_carrito.php");
+            URL url = new URL("http://192.168.1.197:5555/eventpart/ws_actualizar_carrito.php");
             //Establecer conexiÃ³n con el webservice
             HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
             //Habilitar envÃ­o de datos mediante POST
@@ -314,7 +314,7 @@ public class WebService {
         try
         {
             //Establecer URL a consultar en servidor
-            URL url = new URL("http://192.168.2.10/eventpart/ws_borrar_carrito.php");
+            URL url = new URL("http://192.168.1.197:5555/eventpart/ws_borrar_carrito.php");
             //Establecer conexiÃ³n con el webservice
             HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
             //Habilitar envÃ­o de datos mediante POST

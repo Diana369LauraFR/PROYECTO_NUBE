@@ -43,9 +43,10 @@ import java.util.Map;
 public class actualizar_pys extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
-    private static final String UPLOAD_URL = "http://192.168.2.10/eventpart/ActualizarProducto.php";
-    private static final String DELETE_URL = "http://192.168.2.10/eventpart/BorrarProducto.php";
-    private static final String SEARCH_URL = "http://192.168.2.10/eventpart/ConsultarProducto.php";
+
+    private static final String UPLOAD_URL = "http://192.168.1.197:5555/eventpart/ActualizarProducto.php";
+    private static final String DELETE_URL = "http://192.168.1.197:5555/eventpart/BorrarProducto.php";
+    private static final String SEARCH_URL = "http://192.168.1.197:5555/eventpart/ConsultarProducto.php";
 
     private EditText nombre, precio, stock, descripcion;
     private RadioButton producto, servicio;
@@ -182,7 +183,6 @@ public class actualizar_pys extends AppCompatActivity {
                             loading.dismiss();
                             Toast.makeText(actualizar_pys.this, response, Toast.LENGTH_LONG).show();
                             limpiarCampos(); // Limpia los campos después de la actualización exitosa
-
                         }
                     }, new Response.ErrorListener() {
                 @Override

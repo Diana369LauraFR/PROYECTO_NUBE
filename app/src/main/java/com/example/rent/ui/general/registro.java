@@ -1,6 +1,7 @@
 package com.example.rent.ui.general;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -11,9 +12,11 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,11 +39,12 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class registro extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
-    private static final String UPLOAD_URL = "http://192.168.2.10/eventpart/registro.php";
+    private static final String UPLOAD_URL = "http://192.168.1.197:5555/eventpart/registro.php";
 
     private EditText nombre, direccion, telefono, apellido_paterno, apellido_materno, correo;
 
@@ -149,6 +153,8 @@ public class registro extends AppCompatActivity {
                         public void onResponse(String response) {
                             loading.dismiss();
                             Toast.makeText(registro.this, response, Toast.LENGTH_LONG).show();
+                            Log.d("fallaSQL", Objects.requireNonNull(response));
+
 
                             // Limpiar los campos
                             nombre.setText("");
@@ -168,6 +174,7 @@ public class registro extends AppCompatActivity {
                 public void onErrorResponse(VolleyError error) {
                     loading.dismiss();
                     Toast.makeText(registro.this, error.getMessage(), Toast.LENGTH_LONG).show();
+                    Log.d("fallaSQL", Objects.requireNonNull(error.getMessage()));
                 }
             }) {
                 @Override

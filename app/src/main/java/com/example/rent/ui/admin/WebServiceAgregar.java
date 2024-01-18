@@ -36,7 +36,7 @@ public class WebServiceAgregar extends AsyncTask<String, Void, String> {
 
         try {
             // Establecer la conexión con el servidor PHP
-            URL url = new URL("http://192.168.2.10/eventpart/insertar_datos.php");
+            URL url = new URL("http://192.168.1.197:5555/eventpart/insertar_datos.php");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setDoOutput(true);

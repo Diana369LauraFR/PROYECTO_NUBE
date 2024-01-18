@@ -88,20 +88,7 @@ public class iniciar_sesion extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
 
 
     private void registrar(){
@@ -121,7 +108,7 @@ public class iniciar_sesion extends AppCompatActivity {
 
             // Realizar la solicitud HTTP para consultar la base de datos
             // Asegúrate de reemplazar "URL_DEL_PHP" con la URL correcta de tu script PHP
-            String url = "http://192.168.2.10/eventpart/validar_usuario.php?correo="+correo+"&pass="+pass;
+            String url = "http://192.168.1.197:5555/eventpart/validar_usuario.php?correo="+correo+"&pass="+pass;
 
             //http://192.168.1.66/eventpart/validar_usuario.php?correo=diana@gmail.com&pass=1234
             JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,

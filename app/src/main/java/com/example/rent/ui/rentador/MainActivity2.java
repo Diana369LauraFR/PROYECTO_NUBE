@@ -41,16 +41,12 @@ public class MainActivity2 extends AppCompatActivity {
 
 
 
-
-
         final ImageView imagen1 = findViewById(R.id.imageView2);
         final TextView txtTitulo = findViewById(R.id.titulo);
         final TextView txtPrecio = findViewById(R.id.precio);
         final TextView txtStock = findViewById(R.id.stock);
         final TextView txtDescripcion = findViewById(R.id.descripcion);
         final TextView txtIdentificador = findViewById(R.id.identificador);
-
-
 
 
 
